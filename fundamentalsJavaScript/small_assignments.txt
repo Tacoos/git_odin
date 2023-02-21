@@ -1,0 +1,85 @@
+I - FUNDAMENTALS PART 1
+
+    // - VARIABLES -
+    <script>
+        // Working with variables
+        console.log("Hello, World!")
+        let admin 
+          , name;
+        name = "John";
+        admin = name;
+        alert(admin); // "John" OK!
+
+        // Giving the right name
+        const OUR_PLANET = "Gaïa"; // Solution : let ourPlanetName = "Earth";
+        let currentVisitor; // Solution : let currentUserName = "John";
+        
+        // Uppercase const?
+        const BIRTHDAY = '04.12.1991';
+        const age = someCode(BIRTHDAY); // age is constant in a sense that it does not change through the code execution.
+                                        // But it is a bit “less of a constant” than birthday: it is calculated, so we should keep the lower case for it.
+    </script>
+
+    // - NUMBERS -
+    //
+    // Attention : Do not create Number objects.
+    // Comparing two JavaScript objects always returns false.
+    //
+    // num++ => The browser returns the current value, then increments the variable.
+    // ++num => You can make the browser do it the other way round — increment/decrement the variable then return the value — by putting the operator at the start of the variable instead of the end.
+    //
+    // https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Math
+    // Active learning :
+    // Change the line that calculates x so the box is 250px wide, but the 250 is calculated using two numbers and the remainder (modulo) operator.
+    // => x = 750 % 500;
+    // Change the line that calculates y so the box is 150px high, but the 150 is calculated using three numbers and the subtraction and division operators.
+    // => y = (2000-500)/10;
+    // Change the line that calculates x so the box is 200px wide, but the 200 is calculated using the number 4 and an assignment operator.
+    // => let x = 50;   x *= 4;
+    // Change the line that calculates y so the box is 200px high, but the 200 is calculated using the numbers 50 and 3, the multiplication operator, and the addition assignment operator.
+    // => let y = 50;   y += 50*3;
+    //
+    // You may see some people using == and != in their tests for equality and non-equality.
+    // These are valid operators in JavaScript, but they differ from ===/!==.
+    // The former versions test whether the values are the same but not whether the values' datatypes are the same.
+    // The latter, strict versions test the equality of both the values and their datatypes.
+    // The strict versions tend to result in fewer errors, so we recommend you use them.
+    //
+    // https://javascript.info/operators#tasks
+    // The postfix and prefix forms :
+    // What are the final values of all variables a, b, c and d after the code below?
+    // let a = 1, b = 1;
+    // let c = ++a; // ? => a=2 c=2
+    // let d = b++; // ? => b=2 d=1 ATTENTION b++ return 1
+    //
+    // Assignment result :
+    // What are the values of a and x after the code below?
+    // let a = 2;
+    // let x = 1 + (a *= 2); // => a = 4 & x = 5
+    //
+    // Type conversions :
+    // What are results of these expressions?
+    // "" + 1 + 0   // 10
+    // "" - 1 + 0   // -1
+    // true + false // false
+    // 6 / "3"      // 2
+    // "2" * "3"    // 6
+    // 4 + 5 + "px" // "9px"
+    // "$" + 4 + 5  // "$45"
+    // "4" - 2      // 2
+    // "4px" - 2    // NaN
+    // "  -9  " + 5 // " -9 5"
+    // "  -9  " - 5 // 
+    // null + 1     // null
+    // undefined + 1// undefined
+    // " \t \n" - 2 // ""
+    //
+    // Fix the addition :
+    // let a = prompt("First number?", 1);
+    // let b = prompt("Second number?", 2);
+    // alert(a + b); // 12
+    // => alert(Number(a)+ Number(b)); // 3
+    // Nicer solution : prepending them with +.
+    // let a = +prompt("First number?", 1);
+    // let b = +prompt("Second number?", 2);
+    // alert(a + b); // 3  
