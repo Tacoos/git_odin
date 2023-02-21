@@ -1,2 +1,4 @@
 Hello World !
 I'm learning how to use git and link it to my Github.
+and trying to commit by myself with good messages
+set up a way to write the message with VScode
