@@ -4,26 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS fundamentals part 1</title>
+    <title>JS fundamentals part 1 - Assignment</title>
 </head>
 <body>
-    <script>
-        // Working with variables
-        console.log("Hello, World!")
-        let admin 
-          , name;
-        name = "John";
-        admin = name;
-        alert(admin); // "John" OK!
+  <script>
+    // 1 : Add 2 numbers together! (just type console.log(23 + 97) into your html file)
+    console.log(23 + 97);
+    // 2 : Add a sequence of 6 different numbers together.
+    console.log(1 + 2 + 3 + 4 + 5 + 6);
+    // 3 : Print the solution to the following equation: (4 + 6 + 9) / 77
+    console.log((4 + 6 + 9) / 77);
+    // 4 : Let’s use variables!
+        // Type this statement at the top of the script tag: let a = 10
+        let a = 10;
+        console.log(a);
+        let b = 7 * a; // supose to return undifind, but it doesn't.
+        console.log(b);
+    // 5 :  try this sequence:
+        // Declare a constant variable max with the value 57
+        let max = 57;
+        // Set another variable actual to max - 13
+        let actual;
+        actual = max - 13;
+        // Set another variable percentage to actual / max
+        let percentage;
+        percentage = actual / max;
+        // If you type percentage in the console and press enter you should see a value like 0.7719
+        console.log(percentage);
+  </script>  
 
-        // Giving the right name
-        const OUR_PLANET = "Gaïa"; // Solution : let ourPlanetName = "Earth";
-        let currentVisitor; // Solution : let currentUserName = "John";
-        
-        // Uppercase const?
-        const BIRTHDAY = '04.12.1991';
-        const age = someCode(BIRTHDAY); // age is constant in a sense that it does not change through the code execution.
-                                        // But it is a bit “less of a constant” than birthday: it is calculated, so we should keep the lower case for it.
-    </script>
 </body>
 </html>
